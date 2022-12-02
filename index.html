@@ -1,3 +1,5 @@
+<!-- TEM QUE INSTALAR A BIBLIOTECA ANTES npm install blueimp-gallery -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -5,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Instagram </title>
     <script src="https://kit.fontawesome.com/5924f4b8a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css" />
     <link rel="icon" href="img/instaLogo.png">
 </head>
 
@@ -55,7 +58,7 @@
                         <li class="nav-item">
                             <div class="action">
                                 <div class="profile" onclick="menuToggle()">
-                                    <i class="fa-solid fa-user"></i>
+                                    <i class="fa-solid fa-user "></i>
                                 </div>
                             </div>
                         </li>
@@ -125,8 +128,43 @@
                         </div>
                     </div>
                     <div class="imgBx">
-                        <img src="img/fisrtimage.png" alt="post-1" class="cover">
+                        <div id="blueimp-gallery"
+                            class="blueimp-gallery blueimp-gallery-controls blueimp-gallery-contain">
+                            <div class="slides"></div>
+                            <h3 class="title"></h3>
+                            <a class="prev">‹</a>
+                            <a class="next">›</a>
+                            <a class="close">×</a>
+
+                            <ol class="indicator"></ol>
+                        </div>
+                        <script src="js/blueimp-gallery.min.js"></script>
+
+                        <div id="links">
+                            <a href="img/slides/primeiroSlide.png">
+                                <img class="imgBx" src="img/slides/post.png" />
+                            </a>
+                            <a href="img/haridade.jpg">
+                                <img src="" />
+                            </a>
+                            <a href="img/fd2.jpg">
+                                <img src="" />
+                            </a>
+                        </div>
                     </div>
+                    <script>
+                        document.getElementById('links').onclick = function (event) {
+                            event = event || window.event
+                            var target = event.target || event.srcElement,
+                                link = target.src ? target.parentNode : target,
+                                options = { index: link, event: event },
+                                links = this.getElementsByTagName('a')
+                            blueimp.Gallery(links, options)
+                        }
+                    </script>
+
+                    <!-- <img src="img/fisrtimage.png" alt="post-1" class="cover"> -->
+
                     <div class="bottom">
                         <div class="actionBtns">
                             <div class="left">
