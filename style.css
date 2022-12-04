@@ -58,24 +58,33 @@ body {
     width: -10%;
     text-align: end;
     margin-left: 20em;
-    border: 1px rgb(77, 77, 77);
-    box-shadow: 2px 2px 5px black;
+    /* border: 1px rgb(77, 77, 77);
+    box-shadow: 2px 2px 5px black; */
 }
 
 .searchbar input {
     background-color: #fafafa;
     padding: 5px;
+    padding-left: 4rem;
     text-indent: 21px;
     outline: none;
     border: 1px solid rgb(218, 217, 217);
-    border-radius: 2px;
+    border-radius: 2em;
     color: rgb(77, 77, 77);
 }
 
 .searchbar .fa-magnifying-glass {
     position: absolute;
-    margin-left: 0.2rem;
+    margin-left: 3rem;
     margin-top: 0.25rem;
+}
+
+.fa-house:hover,
+.fa-facebook-messenger:hover,
+.fa-compass:hover,
+.fa-heart:hover {
+    color: black;
+
 }
 
 .searchbar input::placeholder {
@@ -115,18 +124,23 @@ body {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    overflow: hidden;
+    /* overflow: hidden; */
     cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+
+
 }
 
 .action .profile .fa-user {
-    width: 50%;
-    height: 80%;
     object-fit: cover;
     color: black;
+    margin-left: 70px;
+}
+
+.action .profile .fa-user:hover {
+    color: #660b64;
 }
 
 main {

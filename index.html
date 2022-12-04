@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/5924f4b8a5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/blueimp-gallery.min.css" />
     <link rel="icon" href="img/instaLogo.png">
+    <script src="js/jquery-3.6.1.min.js"></script>
 </head>
 
 <body>
@@ -52,13 +53,13 @@
                         </li>
                         <li class="nav-item">
                             <a href="">
-                                <i class="far fa-heart"></i>
+                                <i class="far fa-heart" id="fa-heart"></i>
                             </a>
                         </li>
                         <li class="nav-item">
                             <div class="action">
-                                <div class="profile" onclick="menuToggle()">
-                                    <i class="fa-solid fa-user "></i>
+                                <div class="profile">
+                                    <i class="fa-solid fa-user fa-xl"></i>
                                 </div>
                             </div>
                         </li>
@@ -141,13 +142,85 @@
                         <script src="js/blueimp-gallery.min.js"></script>
 
                         <div id="links">
-                            <a href="img/slides/primeiroSlide.png">
+                            <a href="img/slides/postCinza.png">
                                 <img class="imgBx" src="img/slides/post.png" />
                             </a>
-                            <a href="img/haridade.jpg">
+                            <a href="img/slides/primeira.png">
+                                <img class="" src="" />
+                            </a>
+                            <a href="img/slides/Sumário.png">
                                 <img src="" />
                             </a>
-                            <a href="img/fd2.jpg">
+                            <a href="img/slides/história.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/OqDjango.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/MVT.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/MVT 2.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/PqDjango.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/flaskEDjango.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/Instal.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/instal2.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/instal3.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/instal4.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/instal5.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/instal6.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/instal7.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/ExemploCod.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/ExemploCod2.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/ExemploCod3.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/ExemploCod4.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/ExemploCod5.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/ExemploCod6.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/ExemploCod7.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/ExemploCod8.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/doc.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/Ref.png">
+                                <img src="" />
+                            </a>
+                            <a href="img/slides/Ref-1.png">
                                 <img src="" />
                             </a>
                         </div>
@@ -455,6 +528,11 @@
             </div>
         </div>
     </main>
+    <script>
+        $('fa.heart').on('click', function () {
+            $('fa.heart').css('background', '#aa0000');
+        }); 
+    </script>
 </body>
 
 </html>
